@@ -88,8 +88,8 @@
             <label for="fas">Program Study</label>
             <select class="form-select" name="study_program">
                 <option value="" disabled selected>----Pilih Program Study-----</option>
-                <option value="Teknik Sipil">Teknik Informatika</option>
-                <option value="Informatika">Sistem Informasi</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
             </select>
             @error('program_study')
             <div class="text-danger">{{ $message }}</div>
@@ -122,7 +122,7 @@
           </div>
 <div class="col">
 
-    <button type="submit" class="btn btn-primary me-2">Simpan</button>
+    <button type="submit" class="btn btn-success me-2">Simpan</button>
 <a class="btn btn-light" href="{{ url('users') }}">Batal</a>
 </div>
 

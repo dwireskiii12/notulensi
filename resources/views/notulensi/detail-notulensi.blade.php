@@ -29,9 +29,9 @@
                             <h4>
                                 <div class="badge badge-danger">
                                     {{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }}
-                                    WIB ~
+                                    WITA ~
                                     {{ \Carbon\Carbon::parse($summary->meeting->end_time)->locale('id')->translatedFormat(' H:i') ?? '' }}
-                                    WIB </div>
+                                    WITA </div>
                             </h4>
                         </span>
                     </div>
@@ -80,11 +80,6 @@
                                 name="participant_count" value="{{ $summary->meeting->participant_count ?? '' }} Orang"
                                 readonly>
                         </div>
-
-
-
-
-
                         <div class="form-group col-md-6">
                             <label for="participants">Data Peserta Rapat</label>
                             <div class="input-like-disabled">
@@ -95,7 +90,6 @@
                             </ul>
                         </div>
                         </div>
-
                         <div class="form-group col-md-6">
                             <label for="participants">Data Fasilitas</label>
                             <div class="input-like-disabled">
@@ -110,16 +104,12 @@
                             </ul>
                         </div>
                         </div>
-
-
-
                         <div class="form-group col-md-12">
                             <div class="input-like-disabled">
                                 {!! $summary->summary_result !!}
                         </div>
                         </div>
                     </div>
-
                     <a href="{{ route('conclution-meetings.index') }}" class="btn btn-light">Kembali</a>
                 </form>
             </div>

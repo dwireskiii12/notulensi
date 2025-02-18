@@ -160,8 +160,8 @@
                     </tr>
                     <tr>
                         <th>{{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('l, d F Y') ?? '' }}</th>
-                        <td>{{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} WIB</td>
-                        <td> {{ \Carbon\Carbon::parse($summary->meeting->end_time)->locale('id')->translatedFormat('H:i') ?? '' }} WIB</td>
+                        <td>{{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} WITA</td>
+                        <td> {{ \Carbon\Carbon::parse($summary->meeting->end_time)->locale('id')->translatedFormat('H:i') ?? '' }} WITA</td>
 <td>{{ $summary->meeting->rooms->room_name ?? 'Tidak ditemukan' }}</td>
                     </tr>
                 </table>

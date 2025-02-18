@@ -70,24 +70,18 @@
                             </div>
 
                         </div>
-
-
                         <div class="col-md-4">
-
                             <div class="form-group">
                                 <label for="minutes">Sekertaris Rapat:</label>
                                 <input type="text" id="minutes" class="form-control costum-input"
                                     value="{{ $meeting->secretary ? $meeting->secretary->name : 'Notulensi Tidak Ditemukan' }}"
                                     disabled>
                             </div>
-
                             <div class="form-group">
                                 <label for="leader">Ruangan Rapat:</label>
                                 <input type="text" id="leader" class="form-control costum-input"
                                     value="{{ $meeting->rooms->room_name }}" disabled>
                             </div>
-
-
                             <div class="form-group">
                                 <label for="FR">Daftar Fasilitas Rapat:</label>
                                 <div class="input-like-disabled">
@@ -104,8 +98,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="minutes">Notulensi Rapat:</label>
@@ -113,37 +105,29 @@
                                     value="{{ $meeting->minutes ? $meeting->minutes->name : 'Notulensi Tidak Ditemukan' }}"
                                     disabled>
                             </div>
-
                             <div class="form-group">
                                 <label for="leader">Jadwal:</label>
                                 <input type="text" id="leader" class="form-control costum-input"
                                     value="{{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('l, d F Y') ?? '' }} "
                                     disabled>
                             </div>
-
-
                             <div class="form-group">
                                 <label for="status"> Status Rapat</label>
                                 <input type="text" class="form-control" value="{{ $meeting->status }}" id="status"
                                     disabled>
                             </div>
-
                         </div>
-
-
                         <div class="form-group">
                             <label for="name">Kesimpulan Rapat</label>
                             <div class="input-like-disabled">
                                 {!! $summaryResult !!}
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="widget-49-meeting-action">
                                 <a href="{{ route('meeting.meetingresult') }}" class="btn  btn-danger">Kembali</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

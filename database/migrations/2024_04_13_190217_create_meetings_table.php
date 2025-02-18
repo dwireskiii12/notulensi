@@ -27,20 +27,7 @@ return new class extends Migration
         });
     }
 
-    // Schema::create('meetings', function (Blueprint $table) {
-    //     $table->id('meeting_id');
-    //     $table->foreignId('auth_id')->reference('user_id')->on('users')->onDelete('cascade');
-    //     $table->string('meeting_theme');
-    //     $table->foreignId('meeting_minutes')->reference('user_id')->on('users')->onDelete('cascade');
-    //     $table->foreignId('meeting_leader')->reference('user_id')->on('users')->onDelete('cascade');
-    //     $table->text('description');
-    //     $table->dateTime('start_time');
-    //     $table->dateTime('end_time');
-    //     $table->integer('participant_count');
-    //     $table->foreignId('room_id')->reference('room_id')->on('rooms')->onDelete('cascade');
-    //     $table->string('status')->default('Menunggu Pengajuan');
-    //     $table->timestamps();
-    // });
+   
 
     /**
      * Reverse the migrations.

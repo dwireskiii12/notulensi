@@ -98,8 +98,6 @@ class FacilitiesController extends Controller
         Alert::toast('Data has been update successfully', 'success');
 
         return redirect()->route('fas.index');
-
-
     }
 
     /**
@@ -111,6 +109,5 @@ class FacilitiesController extends Controller
         $data->delete();
         Alert::toast('Data has been deleted successfully', 'success');
         return redirect()->route('fas.index');
-
     }
 }

@@ -35,8 +35,6 @@
                             @endforeach
                         </div>
                     </li>
-
-
                     <li class="nav-item dropdown">
                         <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"
                             id="messageDropdown" href="#" data-bs-toggle="dropdown">
@@ -71,37 +69,6 @@
                             @endif
                         </div>
                     </li>
-                    {{-- @if(Auth::check())
-                      <li class="nav-item dropdown">
-                          <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-                              <i class="mdi mdi-bell mx-0"></i>
-                              <span class="count bg-danger">{{ Auth::user()->meetings->count() }}</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                        aria-labelledby="notificationDropdown">
-                        <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-                        @foreach(Auth::user()->meetings as $notification)
-                        <a href="#" class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-                                <i class="mdi mdi-alert-circle-outline mx-0"></i>
-                            </div>
-                            <div class="preview-item-content flex-grow">
-                                <h6 class="preview-subject font-weight-normal">{{ $notification->data['title'] }}</h6>
-                                <p class="font-weight-light small-text text-muted mb-0">
-                                    {{ $notification->data['message'] }}
-                                </p>
-                                <small class="text-muted">{{ $notification->created_at->diffForHumans() }}</small>
-                            </div>
-                        </a>
-                        @endforeach
-                    </div>
-                    </li>
-                    @endif --}}
-
-
-                    {{-- <li class="nav-item dropdown">
-                        <a href="#" class="nav-link count-indicator "><i class="mdi mdi-message-reply-text"></i></a>
-                      </li> --}}
                     <li class="nav-item nav-search d-none d-lg-block ms-3">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -117,32 +84,9 @@
                 <div class="text-center      d-flex align-items-center justify-content-center">
                     <a class="navbar-brand brand-logo m-2" href="#"><img src="{{ asset('template/images/logo_db.png') }}" width="130px"
                             alt="logo" /></a>
-                    {{-- <a class="navbar-brand brand-logo-mini" href="#"><img
-                            src="{{ asset('template/images/logo-mini.svg') }}" alt="logo" /></a> --}}
                 </div>
                 <ul class="navbar-nav navbar-nav-right">
-
-                    {{-- <li class="nav-item dropdown d-lg-flex d-none">
-                          <a class="dropdown-toggle show-dropdown-arrow btn btn-inverse-primary btn-sm" id="nreportDropdown" href="#" data-bs-toggle="dropdown">
-                          Reports
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="nreportDropdown">
-                              <p class="mb-0 font-weight-medium float-left dropdown-header">Reports</p>
-                              <a class="dropdown-item">
-                                <i class="mdi mdi-file-pdf text-primary"></i>
-                                Pdf
-                              </a>
-                              <a class="dropdown-item">
-                                <i class="mdi mdi-file-excel text-primary"></i>
-                                Exel
-                              </a>
-                          </div>
-                        </li> --}}
                     <li class="nav-item dropdown d-lg-flex d-none">
-                        <a href="{{ url('profile') }}" class="btn btn-inverse-success btn-sm">
-                            <i class="mdi mdi-settings
- box-icon"></i>
-                            Settings</a>
                     </li>
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
@@ -156,16 +100,6 @@
                                 <i class="mdi mdi-settings text-primary"></i>
                                 Settings
                             </a>
-
-                            <!-- Authentication -->
-                            {{-- <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-
-                            <button data-toggle="modal" data-target="#logout" class="dropdown-item"><i
-                                    class="mdi mdi-logout text-primary"></i>Logout</button>
-                            </form> --}}
-
-
                             <form id="logoutForm" method="POST" action="{{ route('logout') }}">
                                 @csrf
                                 <button type="button" id="logoutButton" class="dropdown-item">
@@ -195,11 +129,7 @@
                                 });
                             </script>
                         </div>
-
                     </li>
-
-
-
                 </ul>
                 <button class="navbar-toggler navbar-toggler-right d-lg-none d-md-none align-self-center" type="button"
                     data-toggle="horizontal-menu-toggle">
@@ -207,16 +137,12 @@
                 </button>
             </div>
         </div>
-
-
-
     </nav>
-    <nav class="bottom-navbar">
+    <nav class="sidebar">
         <div class="container">
             <ul class="nav page-navigation">
                 @if(Auth::check())
                 <li class="nav-item {{ Request::is('dashboard') ? 'active' : '' }}">
-
                     <a class="nav-link" href="{{ url('dashboard') }}">
                         <i class="mdi mdi-file-document-box menu-icon"></i>
                         <span class="menu-title">Dashboard</span>
@@ -244,15 +170,15 @@
                         <span class="menu-title">Data Ruang Rapat</span>
                     </a>
                 </li>
-
-
-
+                <li class="nav-item {{ Request::is('meeting-result') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url('meeting-result') }}">
+                        <i class="mdi mdi-book-open menu-icon"></i>
+                        <span class="menu-title">Data Hasil Rapat</span>
+                    </a>
+                </li>
                 @endif
 
                 @if(Auth::user()->role == 2)
-
-
-
                 <li class="nav-item {{ Request::is('meeting') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url('meeting') }}">
                         <i class="mdi mdi-calendar-plus menu-icon"></i>
@@ -273,11 +199,7 @@
                     </a>
                 </li>
                 @endif
-
-
                 @if(Auth::user()->role == 3)
-
-
                 <li class="nav-item {{ Request::is('conclution-meetings') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url('conclution-meetings') }}">
                         <i class="mdi mdi-pen menu-icon"></i>
@@ -303,7 +225,6 @@
                         <span class="menu-title">Data Hasil Rapat</span>
                     </a>
                 </li>
-
                 @endif
                 @endif
             </ul>

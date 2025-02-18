@@ -48,7 +48,7 @@
 </div>
 
   <div class="mt-3">
-    <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" >Email Password Reset Link</button>
+    <button type="submit" class="btn btn-block btn-susccess btn-lg font-weight-medium auth-form-btn" >Email Password Reset Link</button>
 
 </div>
 

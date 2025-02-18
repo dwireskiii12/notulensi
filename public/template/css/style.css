@@ -12642,8 +12642,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #464dee;
-    border-color: #464dee;
+    background-color: #ccdcffff;
+    border-color: #ccdcffff;
 }
 
 .btn-primary:hover {
@@ -12667,7 +12667,7 @@ fieldset:disabled .btn {
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #383ebe;
-    border-color: #353ab3;
+    border-color: #ccdcffff;
 }
 
 .btn-check:checked + .btn-primary:focus,
@@ -12681,8 +12681,8 @@ fieldset:disabled .btn {
 .btn-primary:disabled,
 .btn-primary.disabled {
     color: #fff;
-    background-color: #464dee;
-    border-color: #464dee;
+    background-color: #ccdcffff;
+    border-color: #ccdcffff;
 }
 
 .btn-secondary {
@@ -12745,8 +12745,8 @@ fieldset:disabled .btn {
 .btn-check:focus + .btn-success,
 .btn-success:focus {
     color: #000;
-    background-color: #31e0c4;
-    border-color: #25dfc0;
+    background-color: #ccdcffff;
+    border-color: #ccdcffff;
     box-shadow: 0 0 0 0.25rem rgba(11, 186, 157, 0.5);
 }
 
@@ -12756,8 +12756,8 @@ fieldset:disabled .btn {
 .btn-success.active,
 .show > .btn-success.dropdown-toggle {
     color: #000;
-    background-color: #3de2c7;
-    border-color: #25dfc0;
+    background-color: #ccdcffff;
+    border-color: #ccdcffff;
 }
 
 .btn-check:checked + .btn-success:focus,
@@ -12801,7 +12801,7 @@ fieldset:disabled .btn {
 .btn-info.active,
 .show > .btn-info.dropdown-toggle {
     color: #000;
-    background-color: #3bdff9;
+    background-color: #23dbf8;
     border-color: #23dbf8;
 }
 
@@ -16793,7 +16793,7 @@ fieldset:disabled .btn {
 }
 
 .fixed-top,
-.horizontal-menu.fixed-on-scroll .bottom-navbar {
+.horizontal-menu.fixed-on-scroll .sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -16988,7 +16988,7 @@ fieldset:disabled .btn {
 }
 
 .d-block,
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link {
+.horizontal-menu .sidebar .page-navigation > .nav-item > .nav-link {
     display: block !important;
 }
 
@@ -17406,7 +17406,7 @@ fieldset:disabled .btn {
     .nav-item.dropdown
     .navbar-dropdown
     .dropdown-item,
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link {
+.horizontal-menu .sidebar .page-navigation > .nav-item > .nav-link {
     align-items: center !important;
 }
 
@@ -18036,7 +18036,7 @@ fieldset:disabled .btn {
 /* rtl:end:remove */
 .text-primary,
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.mega-menu
     .submenu
@@ -21658,7 +21658,7 @@ fieldset:disabled .btn {
 
 .dropdownAnimation,
 .horizontal-menu .top-navbar .navbar-menu-wrapper .dropdown .dropdown-menu,
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu {
+.horizontal-menu .sidebar .page-navigation > .nav-item .submenu {
     animation-name: dropdownAnimation;
     -webkit-animation-duration: 0.25s;
     -moz-animation-duration: 0.25s;
@@ -26566,7 +26566,7 @@ dl li {
     display: none;
 }
 
-.horizontal-menu .bottom-navbar {
+.horizontal-menu .sidebar {
     background: #ffffff;
     position: relative;
     top: 0;
@@ -26591,18 +26591,18 @@ dl li {
 }
 
 @media (max-width: 767.98px) {
-    .horizontal-menu .bottom-navbar {
+    .horizontal-menu .sidebar {
         display: none;
     }
 
-    .horizontal-menu .bottom-navbar.header-toggled {
+    .horizontal-menu .sidebar.header-toggled {
         display: block;
         max-height: calc(100vh - 78px);
         overflow: auto;
     }
 }
 
-.horizontal-menu .bottom-navbar .page-navigation {
+.horizontal-menu .sidebar .page-navigation {
     position: relative;
     width: 100%;
     z-index: 99;
@@ -26619,31 +26619,31 @@ dl li {
 }
 
 @media (max-width: 767.98px) {
-    .horizontal-menu .bottom-navbar .page-navigation {
+    .horizontal-menu .sidebar .page-navigation {
         border: none;
     }
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item {
+.horizontal-menu .sidebar .page-navigation > .nav-item {
     line-height: 1;
     text-align: left;
 }
 
 @media (max-width: 767.98px) {
-    .horizontal-menu .bottom-navbar .page-navigation > .nav-item {
+    .horizontal-menu .sidebar .page-navigation > .nav-item {
         display: block;
         width: 100%;
         border-right: none;
     }
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item:last-child {
+.horizontal-menu .sidebar .page-navigation > .nav-item:last-child {
     border-right: none;
 }
 
 @media (min-width: 992px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:last-child
         > .nav-link {
@@ -26651,7 +26651,7 @@ dl li {
     }
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link {
+.horizontal-menu .sidebar .page-navigation > .nav-item > .nav-link {
     color: #000000;
     padding: 17px 32px;
     line-height: 1;
@@ -26660,7 +26660,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     > .nav-link
@@ -26671,7 +26671,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     > .nav-link
@@ -26686,7 +26686,7 @@ dl li {
 
 .rtl
     .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     > .nav-link
@@ -26696,7 +26696,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     > .nav-link
@@ -26722,7 +26722,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     > .nav-link
@@ -26736,14 +26736,14 @@ dl li {
 }
 
 @media (max-width: 1024px) {
-    .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link {
+    .horizontal-menu .sidebar .page-navigation > .nav-item > .nav-link {
         padding: 17px 28px;
     }
 }
 
 @media (min-width: 768px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:hover
         .submenu {
@@ -26751,7 +26751,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:hover
         > .nav-link {
@@ -26759,13 +26759,13 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:hover
         > .nav-link
         i,
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:hover
         > .nav-link
@@ -26775,7 +26775,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:hover
         > .nav-link
@@ -26799,7 +26799,7 @@ dl li {
 
 @media (max-width: 767.98px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.show-submenu
         .submenu {
@@ -26807,7 +26807,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.show-submenu
         > .nav-link {
@@ -26815,13 +26815,13 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.show-submenu
         > .nav-link
         i,
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.show-submenu
         > .nav-link
@@ -26831,7 +26831,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.show-submenu
         > .nav-link
@@ -26854,7 +26854,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link {
@@ -26862,7 +26862,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link:before {
@@ -26881,7 +26881,7 @@ dl li {
 
 @media (max-width: 991px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.active
         > .nav-link:before {
@@ -26894,7 +26894,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link:after {
@@ -26908,7 +26908,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link
@@ -26917,19 +26917,19 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link
     .menu-title,
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link
     i,
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.active
     > .nav-link
@@ -26937,21 +26937,21 @@ dl li {
     color: #464dee;
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu {
+.horizontal-menu .sidebar .page-navigation > .nav-item .submenu {
     display: none;
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu ul {
+.horizontal-menu .sidebar .page-navigation > .nav-item .submenu ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu ul li {
+.horizontal-menu .sidebar .page-navigation > .nav-item .submenu ul li {
     display: block;
     line-height: 20px;
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item .submenu ul li a {
+.horizontal-menu .sidebar .page-navigation > .nav-item .submenu ul li a {
     display: block;
     padding: 5px 10px;
     font-weight: 300;
@@ -26975,7 +26975,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     .submenu
@@ -26991,7 +26991,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     .submenu
@@ -27002,7 +27002,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     .submenu
@@ -27013,7 +27013,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     .submenu
@@ -27024,7 +27024,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item
     .submenu
@@ -27034,12 +27034,12 @@ dl li {
     background: #464dee;
 }
 
-.horizontal-menu .bottom-navbar .page-navigation > .nav-item:not(.mega-menu) {
+.horizontal-menu .sidebar .page-navigation > .nav-item:not(.mega-menu) {
     position: relative;
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item:not(.mega-menu)
     .submenu {
@@ -27048,7 +27048,7 @@ dl li {
 
 @media (min-width: 768px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:not(.mega-menu)
         .submenu {
@@ -27063,7 +27063,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:not(.mega-menu)
         .submenu
@@ -27074,7 +27074,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:not(.mega-menu)
         .submenu
@@ -27093,7 +27093,7 @@ dl li {
 
 @media (max-width: 767.98px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:not(.mega-menu)
         .submenu {
@@ -27105,7 +27105,7 @@ dl li {
 
 @media (max-width: 767.98px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:not(.mega-menu)
         .submenu {
@@ -27114,7 +27114,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item:not(.mega-menu)
     .submenu
@@ -27125,7 +27125,7 @@ dl li {
 
 @media (max-width: 767.98px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item:not(.mega-menu)
         .submenu
@@ -27135,7 +27135,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.mega-menu
     .submenu {
@@ -27147,7 +27147,7 @@ dl li {
 
 @media (min-width: 768px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu {
@@ -27162,7 +27162,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu
@@ -27173,7 +27173,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu
@@ -27192,7 +27192,7 @@ dl li {
 
 @media (max-width: 767.98px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu {
@@ -27203,7 +27203,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.mega-menu
     .submenu
@@ -27217,7 +27217,7 @@ dl li {
 }
 
 .horizontal-menu
-    .bottom-navbar
+    .sidebar
     .page-navigation
     > .nav-item.mega-menu
     .submenu
@@ -27227,7 +27227,7 @@ dl li {
 
 @media (max-width: 767.98px) {
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu {
@@ -27235,7 +27235,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu
@@ -27246,7 +27246,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu
@@ -27258,7 +27258,7 @@ dl li {
     }
 
     .horizontal-menu
-        .bottom-navbar
+        .sidebar
         .page-navigation
         > .nav-item.mega-menu
         .submenu
@@ -27269,11 +27269,11 @@ dl li {
     }
 }
 
-.horizontal-menu .bottom-navbar .visibility-hidden {
+.horizontal-menu .sidebar .visibility-hidden {
     visibility: hidden;
 }
 
-.horizontal-menu.fixed-on-scroll .bottom-navbar {
+.horizontal-menu.fixed-on-scroll .sidebar {
     border-bottom: 1px solid #f1f6f8;
 }
 

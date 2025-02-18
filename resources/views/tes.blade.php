@@ -72,7 +72,7 @@
             <p>Berikut adalah hasil notulensi rapat <strong>"Tema Rapat"</strong> yang telah diadakan pada:</p>
             <div class="details">
                 <p><strong>Hari/Tanggal:</strong>{{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('l, d F Y') ?? '' }}</p>
-                <p><strong>Waktu:</strong> {{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} - {{ \Carbon\Carbon::parse($summary->meeting->end_time)->locale('id')->translatedFormat('H:i') ?? '' }} WIB</p>
+                <p><strong>Waktu:</strong> {{ \Carbon\Carbon::parse($summary->meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} - {{ \Carbon\Carbon::parse($summary->meeting->end_time)->locale('id')->translatedFormat('H:i') ?? '' }} WITA</p>
                 <p><strong>Lokasi:</strong> {{ $summary->meeting->rooms->room_name ?? 'Tidak ditemukan' }}</p>
                 <p><strong>Pemimpin Rapat:</strong> {{ $summary->meeting->leader->name ?? 'Tidak ditemukan' }}</p>
                 <p><strong>Sekretaris Rapat:</strong> {{ $summary->meeting->secretary->name ?? 'Tidak ditemukan' }}</p>

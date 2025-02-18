@@ -28,9 +28,6 @@ class Meeting extends Model
         'start_time',
         'end_time'
     ];
-
-
-
     public function getStartTimeAttribute($value)
     {
         return Carbon::parse($value); // Ubah ke objek Carbon
@@ -83,9 +80,4 @@ class Meeting extends Model
     {
         return $this->hasMany(Summary::class, 'meeting_id', 'meeting_id');
     }
-
-
-
-
-
 }

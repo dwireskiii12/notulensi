@@ -20,18 +20,6 @@ class ConclutionMeetingsController extends Controller
      */
     public function index(Request $request)
     {
-        // $user = Auth::user();
-
-        // if ($user->role !== 3) {
-        //     return redirect()->route('login')->with('error', 'Anda tidak memiliki akses.');
-        // }
-
-        // $summaries = Summary::with(['meeting', 'user'])
-        //                     ->where('user_id', $user->user_id);
-
-        // return view('notulensi.dashboard-notulensi', compact('summaries'));
-
-
         $user = Auth::user();
 
         // Periksa peran pengguna
@@ -172,23 +160,12 @@ class ConclutionMeetingsController extends Controller
         } elseif ($request->input('action') === 'publish') {
             $data['status'] = 'PUBLIC';
             $summary->update($data);
-            $this->sendEmailToParticipants($summary);
+            // $this->sendEmailToParticipants($summary);
             Alert::toast('The meeting summary has been published successfully.', 'success');
             // $message = '<strong>Success!</strong> The meeting summary has been published successfully.';
         }
 
         return redirect()->route('conclution-meetings.index');
-    }
-
-    private function sendEmailToParticipants(Summary $summary)
-    {
-        $participants = MeetingParticipant::where('meeting_id', $summary->meeting_id)->get();
-        foreach ($participants as $participant) {
-            if ($participant->user && $participant->user->email) {
-                $recipientName = $participant->user->name;
-                Mail::to($participant->user->email)->queue(new MeetingSummaryPublished($summary, $recipientName));
-            }
-        }
     }
 
     /**

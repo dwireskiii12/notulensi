@@ -15,8 +15,8 @@
         <p>Nama: {{ $name }}</p>
         <p>Email: {{ $email }}</p>
         <p>Password: {{ $password }}</p>
-        <li><strong>Jadwal Rapat:</strong>{{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('l, d F Y') ?? '' }}  {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} WIB -
-             {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat('H:i') ?? '' }} WIB </li>
+        <li><strong>Jadwal Rapat:</strong>{{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('l, d F Y') ?? '' }}  {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} WITA -
+             {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat('H:i') ?? '' }} WITA </li>
     </ul>
     <p>Silakan gunakan informasi di atas untuk masuk dan mulai mencatat hasil rapat.</p>
 </body>

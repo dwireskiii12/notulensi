@@ -19,7 +19,7 @@
                             <input type="text" name="leader" class="form-control" placeholder="Search by leader" value="{{ request('leader') }}">
                         </div>
                         <div class="col-md-3">
-                            <button type="submit" class="btn btn-primary">Search</button>
+                            <button type="submit" class="btn btn-success">Search</button>
                             <a href="{{ route('users-result-meetings.resultusermeeting') }}" class="btn btn-secondary">Clear Filter</a>
                         </div>
                         </div>

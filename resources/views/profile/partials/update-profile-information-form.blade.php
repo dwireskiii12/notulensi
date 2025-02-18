@@ -168,7 +168,7 @@
     </div>
 @endif --}}
 <div class="d-flex align-items-center gap-3">
-    <button type="submit" class="btn btn-primary">{{ __('Save Profile') }}</button>
+    <button type="submit" class="btn btn-success">{{ __('Save Profile') }}</button>
 
     @if (session('status') === 'profile-updated')
         <p

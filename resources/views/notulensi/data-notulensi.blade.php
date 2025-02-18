@@ -24,8 +24,9 @@
                             <th>Tanggal Rapat</th>
                             <th>Waktu Rapat</th>
                             {{-- <th>Hasil Rapat</th> --}}
-                            <th>Status Meeting</th>
+                            <th>Status Rapat</th>
                             <th>Status Kesimpulan</th>
+                            <th>Foto Rapat</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -52,6 +53,7 @@
                 // { data: 'summary_result', name: 'summary_result' },
                 { data: 'meeting_status', name: 'meeting_status' },
                 { data: 'status_badge', name: 'status_badge', orderable: false, searchable: false },
+                { data: 'photos', name: 'photos', orderable: false, searchable: false },
                 { data: 'action', name: 'action', orderable: false, searchable: false },
             ],
             order: [[0, 'asc']],

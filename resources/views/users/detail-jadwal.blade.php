@@ -31,9 +31,9 @@
                                 <h4>
                                     <div class="badge badge-danger">
                                         {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }}
-                                        WIB ~
+                                        WITA ~
                                         {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat(' H:i') ?? '' }}
-                                        WIB </div>
+                                        WITA </div>
                                 </h4>
                             </span>
                         </div>

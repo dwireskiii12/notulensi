@@ -12,7 +12,7 @@
     <p><strong>Deskripsi:</strong> {{ $meeting->description }}</p>
     <p><strong>Jam Mulai:</strong> {{ $meeting->start_time }}</p>
     {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('F') ?? '' }}
-    {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} - {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat(' H:i') ?? '' }} WIB
+    {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} - {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat(' H:i') ?? '' }} WITA
     <p><strong>Jam Selesai:</strong> {{ $meeting->end_time }}</p>
     <p><strong>Ruangan:</strong> {{ $meeting->rooms ? $meeting->rooms->room_name : 'Ruangan Tidak Ditemukan' }}</p>
     <p><strong>Status:</strong> {{ $meeting->status }}</p>
@@ -88,7 +88,7 @@
             <p>Kami mengundang Anda untuk menghadiri rapat <strong>"{{ $meeting->meeting_theme }}"</strong> yang akan diadakan pada:</p>
             <div class="details">
                 <p><i class="fas fa-calendar icon"></i><strong>Hari/Tanggal :</strong> {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('l, d F Y') ?? '' }} </p>
-                <p><i class="fas fa-clock icon"></i><strong>Waktu   :</strong> {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} - {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat(' H:i') ?? '' }} WIB</p>
+                <p><i class="fas fa-clock icon"></i><strong>Waktu   :</strong> {{ \Carbon\Carbon::parse($meeting->start_time)->locale('id')->translatedFormat('H:i') ?? '' }} - {{ \Carbon\Carbon::parse($meeting->end_time)->locale('id')->translatedFormat(' H:i') ?? '' }} WITA</p>
                 <p><i class="fas fa-map-marker-alt icon"></i><strong>Lokasi :</strong> {{ $meeting->rooms ? $meeting->rooms->room_name : 'Ruangan Tidak Ditemukan' }}</p>
                 <p><i class="fas fa-user icon"></i><strong>Pemimpin Rapat   :</strong> {{ $meeting->leader ? $meeting->leader->name : 'Pemimpin Tidak Ditemukan' }}</p>
             </div>

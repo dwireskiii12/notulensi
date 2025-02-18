@@ -98,8 +98,8 @@
                     <label for="study_program">Program Study</label>
                     <select class="form-select" name="study_program">
                         <option value="" disabled>----Pilih Program Study-----</option>
-                        <option value="Teknik Sipil" {{ $user->study_program == 'Teknik Informatika' ? 'selected' : '' }}>Teknik Informatika</option>
-                        <option value="Informatika" {{ $user->study_program == 'Sistem Informasi' ? 'selected' : '' }}>Sistem Informasi</option>
+                        <option value="Teknik Informatika" {{ $user->study_program == 'Teknik Informatika' ? 'selected' : '' }}>Teknik Informatika</option>
+                        <option value="Sistem Informasi" {{ $user->study_program == 'Sistem Informasi' ? 'selected' : '' }}>Sistem Informasi</option>
                     </select>
                     @error('program_study')
                     <div class="text-danger">{{ $message }}</div>
@@ -134,7 +134,7 @@
 
 
             </div>
-                <button type="submit" class="btn btn-primary me-2">Update</button>
+                <button type="submit" class="btn btn-success me-2">Update</button>
                 <a class="btn btn-light" href="{{ route('users.index') }}">Batal</a>
             </form>
         </div>
@@ -152,8 +152,6 @@
             roleSelect.readonly = true;
         }
     });
-
-
     document.addEventListener('DOMContentLoaded', function() {
         const togglePassword = document.getElementById('togglePassword');
         const passwordInput = document.getElementById('password');

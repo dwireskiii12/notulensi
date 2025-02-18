@@ -2,17 +2,17 @@
 
 .auth {
     .login-half-bg {
-        background: url("../images/auth/login-bg.jpg");
+        background-color: #ccdcffff;
         background-size: cover;
     }
 
     .register-half-bg {
-        background: url("../images/auth/register-bg.jpg");
+        background-color: #ccdcffff;
         background-size: cover;
     }
 
     &.lock-full-bg {
-        background: url("../images/auth/lockscreen-bg.jpg");
+        background-color: #ccdcffff;
         background-size: cover;
     }
 
@@ -31,7 +31,6 @@
 
         .input-group {
             .form-control {
-
                 &:focus,
                 &:active {
                     border-color: $border-color;
@@ -62,7 +61,7 @@
         padding: 0;
 
         .auth-form-transparent {
-            @media (min-width:768px) {
+            @media (min-width: 768px) {
                 width: 55%;
                 margin: auto;
             }
@@ -82,13 +81,13 @@
             margin-bottom: 1.5rem;
 
             label {
-                font-size: .8125rem;
+                font-size: 0.8125rem;
             }
 
             .form-control {
                 background: transparent;
                 border-radius: 0;
-                font-size: .9375rem;
+                font-size: 0.9375rem;
             }
         }
 

@@ -566,7 +566,7 @@
 
                                     <td>
                                         <div class="primary-btn">
-                                            <a class="btn btn-primary"
+                                            <a class="btn btn-success"
                                                 href="{{ route('users-meetings.detailscheduleuser', $meeting->meeting_id) }}">Read
                                                 More</a>
                                         </div>
@@ -668,7 +668,7 @@
                                     </td>
                                     <td>
                                         <div class="primary-btn">
-                                            <a class="btn btn-primary"
+                                            <a class="btn btn-success"
                                                 href="{{ route('users-meetings.detailscheduleuser', $meeting->meeting_id) }}">Read
                                                 More</a>
                                         </div>

@@ -76,7 +76,7 @@
                                     <button type="submit"  class="btn btn-dark" onclick="return confirm('Apakah Anda yakin ingin membatalkan pertemuan ini?')">Batalkan Rapat</button>
                                 </form>
                                 <a href="{{ route('meeting.edit', $mt->meeting_id) }}" class="btn btn-warning d-inline">Edit Jadwal</a>
-                                <a href="{{ route('meeting.preview', $mt->meeting_id) }}" class="btn btn-primary ">Ajukan Rapat</a>
+                                <a href="{{ route('meeting.preview', $mt->meeting_id) }}" class="btn btn-success ">Ajukan Rapat</a>
                             </td>
                         </tr>
                         @endforeach
@@ -86,9 +86,6 @@
     </div>
 </div>
 </div>
-
-
-
 @endsection
 
 

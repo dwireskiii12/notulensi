@@ -160,7 +160,7 @@
 
                     <div class="form-group">
 
-                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                        <button type="submit" class="btn btn-success">Simpan Perubahan</button>
                     <a href="{{ url('meeting') }}" class="btn btn-dark"> Batal Perubahan</a>
                 </div>
 

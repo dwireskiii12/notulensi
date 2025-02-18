@@ -1,10 +1,3 @@
- {{-- <x-app-layout>
-     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
- --}}
 @extends('layouts.index')
 
 @section('content')
@@ -108,11 +101,6 @@
 
 
     {{-- fasilitas top perbulan --}}
-
-
-
-
-
  <div class="col-lg-3">
     <h4 class="card-title">Meeting Facilities Statistics</h4>
     <div class="row">
@@ -156,18 +144,10 @@
 
 
       {{-- end fasilitas top perbulan --}}
-
-
-
-
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
     <div class="col-lg-4 grid-margin stretch-card">
         <div class="card congratulation-bg">
             <div class="card-body text-center">
@@ -191,11 +171,6 @@ Admin
     </div>
 
 </div>
-
-
-
-
-
 <div class="row">
     <div class="col-lg-8 grid-margin stretch-card">
         <!-- Kolom Kiri dengan 1 Baris -->
@@ -220,7 +195,6 @@ Admin
                 </div>
             </div>
         </div>
-
         <div class="md-4 ">
             <div class="card bg-c-yellow order-card mt-4" >
                 <div class="card-block">

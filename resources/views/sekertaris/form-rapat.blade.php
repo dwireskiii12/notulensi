@@ -158,7 +158,7 @@
 
                 </div>
                 </div>
-            <button type="submit" class="btn btn-primary me-2">Simpan</button>
+            <button type="submit" class="btn btn-success me-2">Simpan</button>
         <a class="btn btn-light" href="{{ url('meeting') }}">Batal</a>
             </form>
         </div>
